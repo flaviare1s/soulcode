@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+</head>
+<body>
+  <!-- Tabelas 
+    <table> -> indica o elemento de tabela
+    <tr> -> linha da tabela (table row)
+    <td> -> célula da tabela (table data)
+    <th> -> cabeçalho
+    <thead> -> cabeçalho da tabela
+    <tbody> -> corpo da tabela
+    <tfoot> -> rodapé da tabela
+
+    <caption> -> legenda da tabela
+    <colgroup> -> grupo de colunas
+  -->
+
+  <table border="2" style="border-collapse: collapse;">
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Endereço</th>
+      <th colspan="2">Telefones</th>
+    </tr>
+    <tr>
+      <td>Sicrano</td>
+      <td>23</td>
+      <td>Rua dos bobos, 0</td>
+      <td>(00) 0 0000-0000</td> 
+      <td>(00) 0 0000-1111</td>
+    </tr>
+    <tr>
+      <td>Fulano de tal</td>
+      <td>28</td>
+      <td>Rua dos bobos, 10</td>
+      <td colspan="2">(00) 0 0000-0009</td>
+    </tr>
+  </table>
+
+  <br>
+  <hr>
+
+  <table border="1" style="border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th colspan="4">Lista de funcionários</th>
+      </tr>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Pagamento realizado?</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Sicrano</td>
+        <td>qP5tB@example.com</td>
+        <td rowspan="2">Sim</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Fulano de tal</td>
+        <td>qP5tBa@example.com</td>  
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Ciclano</td>
+        <td>qP5tBx@example.com</td>
+        <td rowspan="2">Não</td>  
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Beltrano</td>
+        <td>qP5tBsa@example.com</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total</td>
+        <td>2</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <br>
+  <hr>
+
+  <table border="1" style="border-collapse: collapse;">
+    <caption>Tabela de alunos</caption>
+    <tr>
+      <th>Nome</th>
+      <th>Disciplina</th>
+      <th>Nota</th>
+      <th>Média</th>
+    </tr>
+    <tr>
+      <td rowspan="3">Sicrano</td>
+      <td>Matemática</td>
+      <td>10</td>
+      <td rowspan="3">9</td>
+    </tr>
+    <tr>
+      <td>Português</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Física</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Fulano de tal</td>
+      <td>Matemática</td>
+      <td>10</td> 
+      <td rowspan="3">9</td>
+    </tr>
+    <tr>
+      <td>Português</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Física</td> 
+      <td>8</td>    
+    </tr>
+  </table>
+  <br>
+  <a href="index.html">Voltar para a página inicial</a>
+</body>
+</html>
