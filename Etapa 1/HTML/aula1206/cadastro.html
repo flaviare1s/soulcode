@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Usuário</title>
 </head>
+
 <body>
   <a href="index.html">Voltar para a página inicial</a>
-  <h1>Cadastro</h1>
+  <h2>Cadastro</h2>
+  <!-- 
+    <form> -> Container do formulário
+    <input>, <textarea>, <select> -> Campos de entrada de dados
+    <label> -> rótulo dos campos
+  -->
+
+  <form>
+    <!-- O atributo "for" vincula o campo e o rótulo -->
+    <!-- O placeholder é uma dica para o usuário -->
+    <div>
+      <label for="cNome">Nome: </label> 
+      <input type="text" id="cNome" name="nome" placeholder="Nome completo" required />
+    </div>
+
+    <div>
+      <label for="cEmail">Email: </label> 
+      <input type="email" id="cEmail" name="email" placeholder="exemplo@email.com" required />
+    </div>
+
+    <div>
+      <label for="cSenha">Senha: </label> 
+      <input type="password" id="cSenha" name="senha" placeholder="Digite sua senha" minlength="8" required />
+    </div>
+
+    <div>
+      <label for="cTelefone">Telefone: </label> 
+      <input type="tel" id="cTelefone" name="telefone" placeholder="(00) 00000-0000">
+    </div>
+
+    <div>
+      <label for="cLinkedin">Link do LinkedIn: </label> 
+      <input type="url" id="cLinkedin" name="linkedin" placeholder="linkedin.com/in/seu-nome" />
+    </div>
+
+    <div>
+      <label for="cIdade">Idade: </label> 
+      <input type="number" id="cIdade" name="idade" placeholder="Idade" min="0" max="120">
+    </div>
+
+    <div>
+      <label for="cNascimento">Data de Nascimento: </label> 
+      <input type="date" id="cNascimento" name="nascimento" min="1900-01-01" max="2020-12-31">
+    </div>
+
+    <div>
+      <label for="cFoto">Sua foto: </label> 
+      <input type="file" id="cFoto" name="foto" accept=".png,.png">
+    </div>
+
+    <p>Sua linguagem favorita: </p>
+
+    <div>
+      <input type="radio" id="html" name="linguagem" value="html" />
+      <label for="html">HTML</label> 
+      <input type="radio" id="css" name="linguagem" value="css" />
+      <label for="css">CSS</label> 
+      <input type="radio" id="js" name="linguagem" value="js" />
+      <label for="js">JavaScript</label> 
+    </div>
+
+    
+
+    <div>
+      <label for="cDescricao">Fale um pouco sobre você: </label> <br />
+      <textarea id="cDescricao" name="descricao" placeholder="Fale dos seus hobbies, etc" cols="30" rows="10"></textarea>
+    </div>
+    
+    <div>
+      <label for="cEscolaridade">Escolaridade: </label>
+      <select id="cEscolaridade" name="escolaridade">
+        <option value="fundamental">Ensino Fundamental Completo</option>
+        <option value="medio">Ensino Médio Completo</option>
+        <option value="superior">Ensino Superior Completo</option>
+      </select>
+    </div>
+    
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+    <button type="button">Ajuda?</button>
+    <!-- Caso precise colocar um button dentro de "form" que não esteja relacionado ao formulário, escolher o type "button" -->
+  </form>
 </body>
 </html>
