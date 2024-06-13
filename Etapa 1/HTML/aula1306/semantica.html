@@ -1,0 +1,100 @@
+<!-- Semântica -> Dá mais significado aos elementos do site 
+  - section => seção de conteúdos / capítulos / informações de contato
+  - header => cabeçalho / conteúdo introdutório / autoria
+  - nav => navegação de links
+  - footer => rodapé / copyright / contato / mapa do site / voltar para o topo
+  - aside => conteúdo adicional / sugestões / barra lateral / Anúncios
+  - article => conteúdo independente
+  - main => conteúdo principal do site
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de semântica</title>
+
+  <style>
+    ol {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      padding: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Meu Site</h1>
+    <nav aria-label="primaria">
+      <ol>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Projetos</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Apresentação</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis accusamus voluptas dolorum placeat
+        error, eligendi aspernatur dicta aliquam, nostrum cum laudantium, illum deserunt qui ad repudiandae quam quae!
+        Tenetur cupiditate eum omnis culpa commodi iusto cum iure, quisquam minus.</p>
+    </section>
+    <section>
+      <h2>Carreira</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nisi velit provident consequuntur porro animi
+        eveniet beatae ducimus eligendi perspiciatis vero sunt quisquam mollitia debitis delectus possimus quis aliquid
+        deserunt corporis, dolorum amet eius est ab aperiam? Consequatur impedit hic recusandae voluptatem veritatis
+        ipsam, obcaecati rem voluptas perferendis suscipit esse neque eligendi asperiores nemo animi repellat debitis,
+        aspernatur facilis tempore? Distinctio repellat doloremque maiores illum, ex porro, deleniti corrupti tempora
+        quo at quia? Eaque ratione inventore exercitationem quisquam dolor modi eius rerum ipsam, fugiat deserunt
+        mollitia dolorum molestias quia delectus voluptatibus a reprehenderit nesciunt corrupti impedit. Unde repellat
+        tempore sapiente.</p>
+    </section>
+    <section>
+      <article>
+        <h3>José Almir</h3>
+        <p><strong>Desenvolvedor</strong></p>
+        <p>Um ótimo desenvolvedor</p>
+      </article>
+      <article>
+        <h3>Maria</h3>
+        <p><strong>Desenvolvedora</strong></p>
+        <p>Um excelente profissional</p>
+      </article>
+      <article>
+        <h3>Leonardo</h3>
+        <p><strong>Gerente de projetos</strong></p>
+        <p>Trabalho muito bom!</p>
+      </article>
+    </section>
+    <aside>
+      <h2>Minhas Redes Sociais</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </main>
+  <footer>
+    <hr>
+    <p>©2024 Meu site. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
