@@ -12,7 +12,7 @@
     <div>
       <h1>Agência de Marketing Digital</h1>
     </div>
-    <nav>
+    <nav aria-label="primaria">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Sobre Nós</a></li>
@@ -96,13 +96,15 @@
 
 <!-- 
 - Retirei a div que estava envolvendo o conteúdo inteiro;
-- Adicionei uma tag 'header' envolvendo a div do h1 e a nav;
-- Alterei a tag 'div' para 'nav';
-- Coloquei os links da 'nav' dentro da 'ul';
+- Adicionei uma tag 'header' envolvendo a 'div' do h1 e a 'nav' para separar o conteúdo inicial;
+- Alterei a tag 'div' para 'nav' para indicar que se tratava de uma barra de navegação;
+- Adicionei um 'aria-label' na 'nav' para ajudar no leitor de tela;
+- Coloquei os links da 'nav' dentro da 'ul', pois acho que melhora a semântica no leitor de tela;
 - Adicionei um 'li' para cada 'a';
-- Alterei a tag 'div' para 'main';
-- Dividi o conteúdo da 'main' em 'sections';
-- Dividi o conteúdo da última 'section' em 'articles';
+- Alterei a tag 'div' para 'main' para delimitar o conteúdo principal do site;
+- Dividi o conteúdo da 'main' em 'sections', pois melhora a semântica;
+- Dividi o conteúdo da última 'section' em 'articles', para delimitar os conteúdos independentes;
 - Troquei 'div' por 'aside' nos conteúdos adicionais;
 - Alterei 'div' por 'footer' no rodapé.
+Essas alterações melhoram a semântica do site e isso é de extrema importância para a acessibilidade de pessoas portadoras de deficiência.
 -->
