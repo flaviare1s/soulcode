@@ -1,0 +1,33 @@
+/* !important: ignora a prioridade padrão */
+
+
+/* Seletor de elemento: */
+p {
+  color: blue;
+}
+
+/* Seletor de classe: */
+.destaque {
+  background-color: yellow;
+  color: red;
+}
+
+.texto-centro {
+  text-align: center;
+  color: green;
+}
+
+/* Seletor de ID: aplicado apenas em um elemento */
+#paragrafo {
+  background-color: crimson;
+  color: white;
+  text-align: right;
+}
+
+/* Especificidade => Elemento < Classe < ID */
+
+/* Propriedade herdada passa adiante: */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}

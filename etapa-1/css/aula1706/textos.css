@@ -1,0 +1,43 @@
+/* Propriedades de fonte e texto: */
+p {
+  /* Define uma lista de fontes a ser usada: */
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: black;
+  /* hexadecimal */
+  /* color: #000000; */
+  /* rgb */
+  /* color: rgb(0, 0, 0); */
+  /* rgba */
+  /* color: rgba(0, 0, 0, 1); */
+}
+
+/* Unidades de medida:
+  Absolutas: cm, mm, in, px, pt, pc
+  Relativas: 
+    vw -> viewport width 
+    vh -> viewport height 
+    em
+    rem
+    %
+    vmin
+    vmax
+*/
+
+.quadrado1 {
+  background-color: royalblue;
+  width: 150px;
+  height: 150px;
+}
+
+.quadrado2 {
+  background-color: chartreuse;
+  width: 50vw;
+  height: 20vh;
+}
