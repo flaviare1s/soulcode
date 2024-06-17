@@ -23,9 +23,9 @@ p {
   Relativas: 
     vw -> viewport width 
     vh -> viewport height 
-    em
-    rem
-    %
+    % -> relativo ao elemento pai
+    rem -> relativo ao elemento raiz (html)
+    em 
     vmin
     vmax
 */
@@ -40,4 +40,16 @@ p {
   background-color: chartreuse;
   width: 50vw;
   height: 20vh;
+}
+
+.quadrado3 {
+  background-color: tomato;
+  width: 60%;
+  height: 50%;
+}
+
+.quadrado4 {
+  background-color: violet;
+  width: 300px;
+  height: 300px;
 }
