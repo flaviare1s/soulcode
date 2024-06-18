@@ -95,3 +95,22 @@ th {
   color: #121212;
   border-color: #121212;
 }
+
+.contato-whatsapp {
+  width: 56px;
+  height: 56px;
+  background-color: #CCCCCC;
+  border-radius: 50%;
+  padding: 8px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+.contato-whatsapp img {
+  width: 100%;
+}
+
+.contato-whatsapp:hover {
+  filter: invert(1);
+}
