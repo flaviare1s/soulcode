@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;  
+  padding: 0;
+  border: 0;    
+}
+
+.item-1 {
+  background-color: rgb(249, 207, 129);
+}
+
+.item-2 {
+  background-color: rgb(254, 254, 160);
+}     
+
+.item-3 {
+  background-color: rgb(127, 180, 127);
+  align-self: flex-start;
+}
+
+.item-4 {
+  background-color: rgb(117, 117, 241);
+}
+
+.item-1, .item-2, .item-3, .item-4 {
+  width: 200px;
+  padding: 8px;
+}
+
+.container {
+  height: 100vh;
+  background-color: darkcyan;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* Align-content -> ajusta os elementos quando usamos wrap */
+  /* align-content: center; */
+  gap: 16px;
+}
