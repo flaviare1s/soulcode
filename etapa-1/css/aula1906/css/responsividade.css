@@ -1,0 +1,20 @@
+/* Media Query = rgra especial */
+/* 
+@media (condição) {
+  estilos a serem aplicados se a condição for verdadeira
+}
+*/
+
+/* Exemplo: Se a largura tiver um tamanho máximo de 599px: */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: #d9b800;
+  }
+} 
+
+/* A partir de 769px: */
+@media (min-width: 769px) {
+  body {
+    background-color: #0b0f19;
+  }
+}
