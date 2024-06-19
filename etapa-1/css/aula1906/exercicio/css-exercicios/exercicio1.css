@@ -1,0 +1,76 @@
+.horarios {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  table {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .horarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article {
+    width: 300px;
+  }
+
+  article h3 {
+    border: 1px solid white;
+    margin-top: 16px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  article p {
+    border: 1px solid white;
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 601px)  and (max-width: 900px) {
+  table {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .horarios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  article {
+    width: 200px;
+  }
+
+  article h3 {
+    border: 1px solid white;
+    margin-top: 16px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  article p {
+    border: 1px solid white;
+    padding: 5px 10px;
+  }
+}
