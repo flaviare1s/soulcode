@@ -16,3 +16,4 @@ const nota5 = 10;
 
 const mediaPonderada = (nota1 * 3 + nota2 * 2 + nota3 * 1 + nota4 * 4 + nota5 * 5) / (3 + 2 + 1 + 4 + 5);
 console.log(mediaPonderada);
+
