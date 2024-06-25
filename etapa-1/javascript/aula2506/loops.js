@@ -2,7 +2,7 @@
 // Essas estruturas possuem:
   // Condição de parada
   // Valor inicial (variável de controle, contador)
-  // Incremento (atualização)
+  // Atualização (incremento / decremento)
 
 // While
 // While = Enquanto
