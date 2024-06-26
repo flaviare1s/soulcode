@@ -1,9 +1,11 @@
 // 1. Escreva um programa que inverte uma string
 let palavra = 'palavra'
+let invertida = ''
 
 for(let i = palavra.length - 1; i >= 0; i--) {
-  console.log(palavra[i])
+  invertida += palavra[i]
 }
+console.log(invertida)
 
 
 // 2. Crie uma variável que armazena uma frase, e utilize as funcionalidades de string para remover uma palavra específica da frase e trocar por "###"
